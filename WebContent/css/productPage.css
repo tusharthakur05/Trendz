@@ -1,0 +1,58 @@
+.card {
+ 		width: 100%;
+ 		padding: 1rem;
+ 		position: relative;
+}
+.card-item {
+    /*display: inline-block;*/
+    width: 19%;
+    background-color: whitesmoke;
+    margin-left: 1%;
+    float: left;
+    height: auto;
+    margin-bottom: 2rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+}
+.card img {
+	width: 100%;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
+    background-color: white;
+}
+.card p {
+	font-size: 1.5vw;
+    text-align: center;
+    display: inline-block;
+    padding: 2%;
+    width: auto;
+    color: blue;
+}
+.bi-cart-plus {
+	font-size: 1.5vw;
+	padding: 2%;
+	color: blue;
+}
+.bi-coin {
+	font-size: 1.5vw;
+    padding: 2%;
+    color: green;
+    width: inherit;
+    padding-right: 3%;
+    margin-left: auto;
+    text-align: center;
+}
+.bi-coin p {
+	color: green;	
+}
+.card::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+@media only screen and (max-width: 768px) {
+	.card-item {
+    	width: 32%;
+  	}
+}
+     	

@@ -1,0 +1,339 @@
+@charset "ISO-8859-1";
+/* body styling start*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'Times', 'serif';
+    scroll-behavior: smooth;
+    overflow-x: none;
+    overflow-y: none;
+    position: relative;
+}
+body {
+    background-color: #bbcd8d7d;
+}
+/* body styling end */
+
+/* hosting specific code */
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] 
+{
+    display: none;
+}
+/* hosting specific code */
+
+/* navbar style start */
+.navbar {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: #2a2626f7;
+    padding-top: 1rem;
+    display: block;
+    margin-bottom: 0rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-item {
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    padding: 0.3rem;
+    margin: 0rem 0.5rem;
+    margin-top: 0.2rem;
+    color: #fff;
+    font-weight: 200;
+}
+input[type="search"], .categories {
+    width: 75%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 0.3rem solid beige;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    float: left;
+    margin-right: 1%;
+}
+.navbar button[type="submit"] {
+    padding: 0.2rem;
+    height: 3rem;
+    min-width: 5%;
+    max-width: 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.1rem solid white;
+    color: #fff;
+    font-weight: 300;
+}
+.navbar .nav-brand {
+    width: 10%;
+    height: 3rem;
+    padding: 0rem;
+    margin-left: 4%;
+    float: left;
+    margin-top: 0.2rem;
+    margin-right: 1%;
+}
+.navbar .nav-brand::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#search-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0%;
+    margin-bottom: 0.3rem;
+    border: none;
+}
+#nav-menu {
+    background-color: #111;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.categories option {
+	height: 50%;
+	max-height: 20rem;
+	width: 50%;
+	max-width: 20rem;
+	font-size: 1.5rem;	
+	background-color: #222;
+	color: whitesmoke;
+}
+.navbar a {
+    text-decoration: none;
+    max-width: fit-content;
+}
+.navbar a:hover, .navbar a:focus {
+    border-bottom: 0.3rem solid rgb(8, 110, 39);
+    padding: 0.4rem;
+    font-weight: 400;
+}
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* navbar style end */
+
+/* demo section style start */
+.demo-section {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.demo-section .demo-section-item {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.nav-dot {
+    text-align: center;
+    position: absolute;
+    bottom: 0.5rem;
+    height: 2rem;
+    width: 100%;
+    z-index: 1;
+}
+.nav-dot-item {
+    font-size: 3rem;
+    color: azure;
+}
+.nav-arr {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 50%;    
+    z-index: 1;
+    font-size: 1rem;
+    color: aquamarine;
+}
+.bi-arrow-left-circle-fill {
+    color: rgb(21, 229, 56);
+    left: 1rem;
+    font-size: 2rem;
+    position: absolute;
+}
+.bi-arrow-right-circle-fill {
+    color: rgb(21, 229, 56);
+    right: 1rem;
+    font-size: 2rem;
+    position: absolute;
+}
+/* demo section style end */
+
+/* offer section style start */
+.offer-section {
+    margin-top: 1rem;
+    height: 40%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: rgb(26, 14, 14);
+    font-size: 15rem;
+    font-family: fantasy;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+.offer-section p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: cursive;
+    font-style: italic;
+    background-color: bisque;
+}
+.offer-section .offer-section-item {
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin: 0%;
+    padding: 0.5%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+.offer-section-img {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    box-sizing: border-box;
+}
+.offer-section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* offer section style end */
+
+/* contact form style start */
+.cnt {
+    margin-top: 5rem;
+    width: 90%;
+    left: 5%;
+    height: 40%;
+    max-height: 40rem;
+    font-size: 2rem;
+    background-color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 0.5rem solid lightcyan;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+.cnt span {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #14abd1;
+    border-bottom: 0.5rem solid darkcyan;
+    background-color: darkslategray;
+}
+.cnt input[type="text"], .cnt input[type="email"], .cnt textarea {
+    height: 3rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 0.2rem solid #222;
+    outline: none;
+    background-color: transparent;
+    overflow: visible;
+    width: 90%;
+    text-align: center;
+}
+.cnt input[type="text"]:focus, .cnt input[type="email"]:focus, .cnt textarea:focus,
+.cnt input[type="text"]:active, .cnt input[type="email"]:active, .cnt textarea:active {
+    background-color: lightgray;
+}
+.cnt input[type="submit"] {
+    height: 3rem;
+    padding: 0.3rem;
+    font-size: 2rem;
+    width: auto;
+    border-radius: 5rem;
+    background-color: aqua;
+    color: green;
+}
+.cnt i {
+    font-size: 2rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 0rem solid transparent;
+    color: #222;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+/* contact form style end */
+/* footer style start */
+footer {
+	background-color: rgb(35, 47, 62);
+	width: 100%;
+	height: 20vh;
+	color: white;
+	overflow-y: auto;
+	position: relative;
+	bottom: 0rem;
+}
+footer p {
+	font-size: 1.5rem;
+}
+footer a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+}
+footer h1{
+	font-size: 2rem;
+}
+footer .left {
+	top: 10%;
+	left: 5%;
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	box-sizing: border-box;
+}
+footer .right {
+	top: 10%;
+	right: 5%;
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	box-sizing: border-box;
+}
+/*footer style end */
+
+/* Instruction policy start */
+.instruction  {
+	font-family: 'sans-serif';
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: whitesmoke;
+	text-align: left;
+	margin: 1rem;
+} 
+.instruction h1 {
+	font-size: 2rem;
+	color: black;
+}
+.instruction p, b, li{
+	font-size: 1.5rem;
+	color: rgb(0,0,0,0.8);
+}
+.instruction ul {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+/* Instruction policy end */
+
+/* utility css classes */
+.white {
+    color: white;
+}

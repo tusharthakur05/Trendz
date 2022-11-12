@@ -1,0 +1,130 @@
+/* body styling start*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'Times', 'serif';
+    scroll-behavior: smooth;
+    overflow: visible;
+    position: relative;
+}
+body {
+    background-color: #7d80787d;
+}
+/* body styling end */
+
+/* hosting specific code */
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] 
+{
+    display: none;
+}
+/* hosting specific code */
+
+/* details section style */
+.details {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 90vw;
+    height: 90vh;
+    max-width: 50rem;
+    max-height: 45rem;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+    box-sizing: border-box;
+}
+.signin, .signup, .forgotpassword {
+    text-align: center;
+    font-size: 2rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.signup, .forgotpassword {
+    display: none;
+}
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], textarea, #state, #dist, #state option, #dist option {
+    font-size: 2rem;
+    padding: 0.2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.3rem solid rgb(16, 16, 16);
+    text-align: center;
+    overflow: visible;
+    margin: 0.2rem;
+    width: 90%;
+}
+input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, textarea:focus,
+input[type="email"]:active, input[type="text"]:active, input[type="password"]:active, input[type="number"]:active, textarea:active,
+#state:focus, #dist:focus, #state option:focus, #dist option:focus, #state:active, #dist:active, #state option:active, #dist option:active {
+    outline: none;
+    background-color: lightgray;
+}
+#state option, #dist option {
+	height: 50%;
+	max-height: 20rem;
+	width: 50%;
+	max-width: 20rem;
+	font-size: 1.5rem;	
+}
+form input[type="button"] {
+    height: 4rem;
+    width: auto;
+    color: rgb(12, 12, 12);
+    font-family: Cambria;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+form button {
+    height: 3rem;
+    width: auto;
+    color: rgb(12, 12, 12);
+    font-family: Cambria;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: bisque;
+}
+form span, form a {
+    font-size: 1.5rem;
+}
+.btn-active {
+    font-weight: 800;
+    background-color: rgb(191, 235, 33);
+}
+form input[type="button"].cancel {
+    float: right;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+}
+form i {
+    font-size: 2rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 0rem solid transparent;
+    color: #222;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+form .wrn-msg {
+    color: red;
+    font-size: 1.5rem;
+    display: none;
+}
+button[type="submit"] .bi-search {
+	color: whitesmoke;
+}
+form::after {
+    content: "";
+    display: "block";
+    clear: "both";
+}
+/* details section style end*/
